@@ -1,0 +1,25 @@
+using System;
+
+class program{
+    static void Main(){
+        int choice = 1;
+        
+        switch(choice){
+            case 1:
+                Console.WriteLine("Addition...");
+                break;
+            case 2:
+                Console.WriteLine("Subtraction...");
+                break;
+            case 3:
+                Console.WriteLine("Multiplication...");
+                break;
+            case 4:
+                Console.WriteLine("Division...");
+                break;
+            default:
+                Console.WriteLine("Invalid Option...");
+                break;
+        }
+    }
+}
