@@ -9,5 +9,13 @@ class Program
 
         Console.WriteLine("The addition is: " + (a + b));
         Console.WriteLine("The subtraction is: " + (a - b));
+        Console.WriteLine(a * b);
+        Console.WriteLine(a / b);
+        Console.WriteLine(a % b);
+        
+        a++;
+        Console.WriteLine(a);
+        b--;
+        Console.WriteLine(b);
     }
 }
