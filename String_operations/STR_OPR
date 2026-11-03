@@ -1,0 +1,52 @@
+using System;
+
+class Program{
+    static void Main(){
+        string name = "Apple";
+        int age = 23;
+        Console.WriteLine($"My name is {name}");
+        Console.WriteLine($"My age is {age}");
+    }
+}
+
+
+
+
+using System;
+
+class Program{
+    static void Main(){
+        string name = "Fruits";
+        string[] result = name.Split(' ');
+        Console.WriteLine(result[0]);
+        Console.WriteLine(result[1]);
+    }
+}
+
+
+
+
+using System;
+
+class Program{
+    static void Main(){
+        string name = "A";
+        name.Replace("A", "University");
+        Console.WriteLine(name);
+    }
+}
+
+
+
+
+using System;
+using System.Text;
+
+class Program{
+    static void Main(){
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.Append(" A");
+        sb.Append(" University");
+        Console.WriteLine(sb);
+    }
+}
