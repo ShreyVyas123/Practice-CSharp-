@@ -1,0 +1,9 @@
+using System;
+
+class Program{
+    static void Main(){
+        string a = "200";
+        int b = Convert.ToInt32(a);
+        Console.WriteLine(b + 50);
+    }
+}
