@@ -1,0 +1,14 @@
+using System;
+
+class program{
+    static void Main(){
+        int age = 22;
+        
+        if (age >= 18){
+            Console.WriteLine("Eligible to vote...");
+        }
+        else{
+            Console.WriteLine("Not Eligible to vote...")
+        }
+    }
+}
