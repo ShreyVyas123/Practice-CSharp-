@@ -1,0 +1,19 @@
+using System;
+
+class Program{
+    static void Main(){
+        int age = 22;
+        long population = 8000000000L;
+        double percentage = 89.75;
+        decimal salary = 45000.50m;
+        bool isStudent = true;
+        char grade = 'A';
+
+        Console.WriteLine("Age: " + age);
+        Console.WriteLine("Population: " + population);
+        Console.WriteLine("Percentage: " + percentage);
+        Console.WriteLine("Salary: " + salary);
+        Console.WriteLine("Is Student: " + isStudent);
+        Console.WriteLine("Grade: " + grade);
+    }
+}
