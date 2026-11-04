@@ -69,3 +69,18 @@ string message = "I like Cricket";
 string result = message.Replace("Cricket", "Football");
 
 Console.WriteLine(result);
+
+
+
+# String 
+using System;
+using System.Text;
+
+StringBuilder sb = new StringBuilder("Hello");
+sb.Append("Friend");
+
+Console.WriteLine(sb);
+
+sb.Replace("Hello", "Welcome");
+
+Console.WriteLine(sb);
