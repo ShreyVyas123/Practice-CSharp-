@@ -1,0 +1,18 @@
+using System;
+using System.Collection.Generic;
+
+List<string> fruits = ["Apple", "Orange" , "Banana"];
+fruits.Add("Orange");
+fruits.AddRange(new[] { "Kiwi", "Grapes" });
+fruits.Insert(1, "Pear");
+
+Console.WriteLine(fruits[0]);        
+fruits[0] = "Green Apple";           
+
+fruits.Remove("Banana");            
+fruits.RemoveAt(2);               
+fruits.Clear();                       
+
+Console.WriteLine(fruits.Count);      
+Console.WriteLine(fruits.Contains("Mango"));   
+Console.WriteLine(fruits.IndexOf("Mango"));    
