@@ -1,0 +1,52 @@
+using System;
+
+class Program{
+    static void Main(){
+        // 1. Current date and time
+        DateTime now = DateTime.Now;
+        Console.WriteLine("Now: " + now);
+
+        // 2. Today's date only
+        DateTime today = DateTime.Today;
+        Console.WriteLine("Today: " + today);
+
+        // 3. UTC time
+        DateTime utc = DateTime.UtcNow;
+        Console.WriteLine("UTC: " + utc);
+
+        // 4. Specific date
+        DateTime d = new DateTime(2026, 11, 4);
+        Console.WriteLine("Year: " + d.Year);
+        Console.WriteLine("Month: " + d.Month);
+        Console.WriteLine("Day: " + d.Day);
+        Console.WriteLine("Day name: " + d.DayOfWeek);
+
+        // 5. Add days and months
+        DateTime later = today.AddDays(5);
+        later = later.AddMonths(1);
+        Console.WriteLine("Later: " + later);
+
+        // 6. Format the date
+        Console.WriteLine(now.ToString("dd/MM/yyyy"));
+        Console.WriteLine(now.ToString("HH:mm:ss"));
+
+        // 7. Difference between two dates (TimeSpan)
+        DateTime start = DateTime.Today;
+        DateTime end = new DateTime(2026, 12, 31);
+        TimeSpan gap = end - start;
+        Console.WriteLine("Days left: " + gap.TotalDays);
+
+        // 8. TimeSpan
+        TimeSpan t = TimeSpan.FromMinutes(135);
+        Console.WriteLine(t.Hours + " hours " + t.Minutes + " minutes");
+
+        // 9. DateTimeOffset
+        DateTimeOffset nowOffset = DateTimeOffset.Now;
+        Console.WriteLine("With offset: " + nowOffset);
+
+        // 10. Age
+        DateTime birthDate = new DateTime(2000, 5, 17);
+        int age = DateTime.Today.Year - birthDate.Year;
+        Console.WriteLine("Age: " + age);
+    }
+}
