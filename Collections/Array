@@ -11,3 +11,34 @@ Console.WriteLine("Your numbers:");
 for (int i = 0; i < 5; i++){
     Console.WriteLine(numbers[i]);
 }
+
+
+# Looping over collections
+
+// List
+foreach (string fruit in fruits)
+{
+    Console.WriteLine(fruit);
+}
+
+// Dictionary: each item is a KeyValuePair
+foreach (KeyValuePair<string, int> pair in ages)
+{
+    Console.WriteLine($"{pair.Key} is {pair.Value}");
+}
+
+// Cleaner with var and deconstruction
+foreach (var (name, age) in ages)
+{
+    Console.WriteLine($"{name} is {age}");
+}
+
+// Only keys or only values
+foreach (string key in ages.Keys) { }
+foreach (int value in ages.Values) { }
+
+// HashSet
+foreach (int id in ids)
+{
+    Console.WriteLine(id);
+}
