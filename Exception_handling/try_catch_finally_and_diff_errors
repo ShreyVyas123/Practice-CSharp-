@@ -1,0 +1,73 @@
+try
+{
+    int a = 10;
+    int b = 0;
+    Console.WriteLine(a / b);
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("You cannot divide by zero!");
+}
+
+Console.WriteLine("Program continues...");
+
+
+
+# Multiple catch blocks
+
+Console.Write("Enter a number: ");
+string input = Console.ReadLine();
+
+try
+{
+    int number = int.Parse(input);
+    int result = 100 / number;
+    Console.WriteLine("Result: " + result);
+}
+catch (FormatException)
+{
+    Console.WriteLine("That's not a valid number.");
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("Number cannot be zero.");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Something unexpected: " + ex.Message);
+}
+
+
+
+
+# Finally block
+
+try
+{
+    Console.WriteLine("Opening file...");
+    int x = int.Parse("abc");   // crashes
+    Console.WriteLine("Reading file...");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Bad data!");
+}
+finally
+{
+    Console.WriteLine("Closing file (always runs).");
+}
+
+# Custom Exception
+
+public class InsufficientBalanceException : Exception
+{
+    public decimal Balance { get; }
+    public decimal Amount { get; }
+
+    public InsufficientBalanceException(decimal balance, decimal amount)
+        : base($"Cannot withdraw {amount}. Balance is only {balance}.")
+    {
+        Balance = balance;
+        Amount = amount;
+    }
+}
