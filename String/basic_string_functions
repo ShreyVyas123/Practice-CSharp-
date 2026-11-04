@@ -1,0 +1,71 @@
+ # String - Split function
+
+ using System;
+
+class program{
+    static void Main(){
+        Console.WriteLine("Enter the string : ");
+        string fruits = Console.ReadLine();
+        
+        string[] result = fruits.Split(',');
+        
+        foreach(string fruit in result){
+            Console.WriteLine(fruit);
+        }
+    }
+}
+
+
+# String - Substring function
+
+using System;
+
+class program{
+    static void Main(){
+        Console.WriteLine("Enter the input : ");
+        string input = Console.ReadLine();
+        
+        string result = input.Substring(0,4);
+        Console.WriteLine(result);
+    }
+}
+
+
+
+# String - Trim function
+
+using System;
+
+class program{
+    static void Main(){
+        Console.WriteLine("Enter the input : ");
+        string name = Console.ReadLine();
+        
+        string result = name.Trim();
+        Console.WriteLine(result);
+    }
+}
+
+
+#String - Contains function
+
+using System;
+
+class program{
+    static void Main(){
+        Console.WriteLine("Enter the input : ");
+        string information = Console.ReadLine();
+        
+        bool result = information.Contains("Alliance");
+        Console.WriteLine(result);
+    }
+}
+
+
+# String - Replace Function
+
+string message = "I like Cricket";
+
+string result = message.Replace("Cricket", "Football");
+
+Console.WriteLine(result);
